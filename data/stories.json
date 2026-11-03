@@ -1,0 +1,555 @@
+[
+  {
+    "actions": [
+      "Package your product's key workflows as skills so customers' agents can use them.",
+      "Pay attention to the security guidance; malicious instruction files (e.g. planted AGENTS.md) are already being seen in the wild."
+    ],
+    "category": "Agents & Dev",
+    "details": [
+      "Announced 22 October. The donation covers the name, logo, GitHub organisation and agentskills.io domain. Engineers from Anthropic, Google, OpenAI and others will maintain it.",
+      "The roadmap includes versioned releases, a formal proposal process and security guidance for skill authors and installers.",
+      "Related: Alibaba donated its OpenSandbox project to the same foundation, and OpenAI added 'MCP Events' so ChatGPT can subscribe to updates from MCP servers."
+    ],
+    "edition": "2026-11-04",
+    "eventDate": "2026-10-22",
+    "headline": "Anthropic hands the Agent Skills standard to the Linux Foundation's agent body",
+    "impact": "medium",
+    "pmTake": "Skills are becoming a cross-vendor packaging format for 'how to do this task here'. Writing your workflows as skills makes them portable across agents.",
+    "publishedAt": "2026-11-04T03:00:00+05:30",
+    "rank": 9,
+    "sources": [
+      {
+        "name": "Anthropic",
+        "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+      },
+      {
+        "name": "agentskills.io",
+        "url": "https://agentskills.io/home"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Platforms",
+        "value": "70+"
+      },
+      {
+        "label": "Skills published",
+        "value": "~1M"
+      },
+      {
+        "label": "Installs",
+        "value": "~280M"
+      },
+      {
+        "label": "Governance",
+        "value": "AAIF (Linux Foundation)"
+      }
+    ],
+    "summary": "Agent Skills, used by 70+ platforms including ChatGPT, Cursor and GitHub Copilot, now lives under the vendor-neutral Agentic AI Foundation.",
+    "id": "2026-11-04-agent-skills-aaif"
+  },
+  {
+    "actions": [
+      "Start tracking where AI assistants cite your product or content.",
+      "Shift SEO metrics from sessions to revenue per visit and conversions.",
+      "Make key product facts easy for models to quote accurately (clear docs, structured pages)."
+    ],
+    "category": "Market",
+    "details": [
+      "Several publishers report large traffic declines since AI search features launched; DMG Media's figure is the starkest. Google is testing query bubbles in AI Overviews that send users into AI Mode.",
+      "Google rolled out AI Mode ads in ten countries and multiturn ads in the US, served through existing Search, Shopping and Performance Max campaigns.",
+      "HubSpot lost about 80% of organic traffic to AI answers but kept growing revenue by tracking AI citations, pruning low-value pages and measuring revenue per visit.",
+      "A Trakkr study traced 1,285 statistics cited by five AI assistants and found fewer than half led back to an original study."
+    ],
+    "edition": "2026-11-04",
+    "eventDate": "2026-11-02",
+    "headline": "AI search answers keep draining clicks from publishers",
+    "impact": "medium",
+    "pmTake": "If your growth relies on organic search, plan for AI answers taking the click. 'Being cited by AI' is becoming a distribution channel to measure.",
+    "publishedAt": "2026-11-04T03:00:00+05:30",
+    "rank": 7,
+    "sources": [
+      {
+        "name": "Trust Insights newsletter",
+        "url": "https://trustinsights.substack.com/p/so-what-ai-news-you-should-care-about-9bc"
+      },
+      {
+        "name": "Search Engine Journal on HubSpot",
+        "url": "https://www.searchenginejournal.com/hubspot-lost-80-of-its-traffic-cmo-kipp-bodnar-explains-why-revenue-kept-growing/594004/"
+      }
+    ],
+    "specs": [
+      {
+        "label": "DMG Media CTR",
+        "value": "−89%"
+      },
+      {
+        "label": "HubSpot organic",
+        "value": "−80%, revenue still grew"
+      },
+      {
+        "label": "AI Mode ads",
+        "value": "10 countries + multiturn (US)"
+      }
+    ],
+    "summary": "DMG Media reports an 89% drop in click-through from Google AI Overviews, Reddit blames AI Mode for falling referrals, and Google is expanding ads inside AI Mode to ten countries.",
+    "id": "2026-11-04-ai-overviews-traffic"
+  },
+  {
+    "actions": [
+      "Revisit any roadmap assumption that model quality improves in slow, predictable steps.",
+      "Keep your model layer swappable: abstract prompts, evals and routing so upgrades are cheap.",
+      "Watch for RSP changes; they can affect what features Anthropic allows in its API."
+    ],
+    "category": "Policy & Safety",
+    "details": [
+      "The disclosure sits in the risk factors of Anthropic's amended IPO registration, not a blog post. Anthropic says its use of AI to accelerate research may push capabilities ahead of safety, alignment and security measures.",
+      "It admits it has previously noticed significant acceleration only after the fact, and that internal projections suggest it may soon see dramatically faster progress attributable to AI, which is how its Responsible Scaling Policy defines the threshold.",
+      "No current model has been designated as crossing it. Anthropic says it would not let Claude autonomously build successive frontier generations without meaningful human oversight, and is weighing RSP updates.",
+      "Skeptics note that an S-1 is partly a marketing document. TechCrunch argues policymakers should still take the claim seriously given how fast Claude's coding and security skills grew this year."
+    ],
+    "edition": "2026-11-04",
+    "eventDate": "2026-11-02",
+    "headline": "Anthropic's IPO filing says it may be close to AI that speeds up its own development",
+    "impact": "high",
+    "pmTake": "Model capability jumps may arrive faster and less predictably. Build products that can absorb a new model every few months without a rewrite.",
+    "publishedAt": "2026-11-04T03:00:00+05:30",
+    "rank": 2,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Document",
+        "value": "S-1/A risk factors"
+      },
+      {
+        "label": "Filed",
+        "value": "2 Nov 2026"
+      },
+      {
+        "label": "Threshold",
+        "value": "RSP 'RSI' definition"
+      },
+      {
+        "label": "Crossed yet?",
+        "value": "No (per filing)"
+      }
+    ],
+    "summary": "In a revised S-1 risk section, Anthropic says AI-accelerated R&D could soon outpace its safety work and that it may approach its own threshold for recursive self-improvement.",
+    "id": "2026-11-04-anthropic-rsi"
+  },
+  {
+    "actions": [
+      "Review your onboarding for age verification if you ship conversational or companion features.",
+      "Have legal check the Anthropic policy diff before 12 November if you build on Claude."
+    ],
+    "category": "Policy & Safety",
+    "details": [
+      "Apple's change applies to romance software and virtual chat partners on the App Store.",
+      "Anthropic's update bans non-consensual tracking and building surveillance tools, explicitly covers weapons software and arming drones, removes the blanket ban on campaign targeting while focusing on voter deception, and requires that any physical equipment Claude controls can be stopped by a qualified operator and holds a safe state if disconnected.",
+      "OpenAI separately began watermarking text generated for EU users to comply with EU law, and Dots are blocked for users under 18."
+    ],
+    "edition": "2026-11-04",
+    "eventDate": "2026-11-03",
+    "headline": "Apple restricts AI companion apps to users 18 and over; Anthropic tightens its usage policy",
+    "impact": "watch",
+    "pmTake": "Age gating and platform policy are now product requirements for consumer AI. Check both app-store rules and model-provider policies before launch.",
+    "publishedAt": "2026-11-04T03:00:00+05:30",
+    "rank": 11,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up/"
+      },
+      {
+        "name": "Anthropic policy update",
+        "url": "https://www.anthropic.com/news/2026-usage-policy-update"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Apple",
+        "value": "18+ for AI companions"
+      },
+      {
+        "label": "Anthropic policy",
+        "value": "Effective 12 Nov 2026"
+      },
+      {
+        "label": "Hardware rule",
+        "value": "Operator stop + safe state"
+      }
+    ],
+    "summary": "Apple is adding an age floor for AI companions and dating apps. Anthropic's rewritten usage policy, effective 12 November, adds rules on surveillance, weapons and AI-controlled hardware.",
+    "id": "2026-11-04-apple-age-floor"
+  },
+  {
+    "actions": [
+      "If your product splits 'ask' and 'act' modes, test a single surface that escalates from answer to action.",
+      "Note the shared-quota model: pooled usage is becoming the pricing norm for AI suites."
+    ],
+    "category": "Products",
+    "details": [
+      "OpenAI emailed users on 2 November. The desktop app had a ChatGPT section with separate Chat and Work tabs plus a Codex section, which made it unclear where work was happening.",
+      "In the merged space users can attach files and plugins and ask ChatGPT to build a site, make a presentation or act on the web, then review and steer the work as it runs.",
+      "ChatGPT and Codex will draw from the same token allowance. OpenAI says most users won't notice, but heavy users may hit limits more often.",
+      "Anthropic merged Claude's chat and Cowork into one interface in September, so this is a convergence across the two leaders."
+    ],
+    "edition": "2026-11-04",
+    "eventDate": "2026-11-02",
+    "headline": "ChatGPT merges its Chat and Work tabs into one space",
+    "impact": "medium",
+    "pmTake": "Both OpenAI and Anthropic have now concluded that separating 'chat' from 'doing' confuses users. A useful lesson for any product with a mode switch.",
+    "publishedAt": "2026-11-04T03:00:00+05:30",
+    "rank": 3,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Surface",
+        "value": "ChatGPT desktop app"
+      },
+      {
+        "label": "Rollout",
+        "value": "Select users first"
+      },
+      {
+        "label": "Codex",
+        "value": "Stays separate"
+      },
+      {
+        "label": "Usage",
+        "value": "Shared token pool"
+      }
+    ],
+    "summary": "OpenAI is collapsing the two tabs in its desktop app so users go from talking about an idea to having ChatGPT carry it out in one place. ChatGPT and Codex will share one usage pool.",
+    "id": "2026-11-04-chatgpt-tabs"
+  },
+  {
+    "actions": [
+      "Find spots in your product that are really multiple-choice decisions (intent routing, triage, moderation) and test a decision model there.",
+      "Use the per-answer probabilities to set confidence thresholds and human-review rules."
+    ],
+    "category": "Agents & Dev",
+    "details": [
+      "Instead of free text, these models take a structured question and return one of the allowed answers plus a probability for each.",
+      "Workday reportedly uses Jev to choose UI components on the fly because latency is low enough. Hamel Husain describes using decision models to build evals for AI features.",
+      "Cloudflare also launched a reinforcement-learning service to customise Clef on your own data."
+    ],
+    "edition": "2026-11-04",
+    "eventDate": "2026-10-30",
+    "headline": "'Decision models' emerge: typed questions in, answers with probabilities out",
+    "impact": "watch",
+    "pmTake": "For classification, routing and evals inside your product, a decision model can be cheaper, faster and easier to test than a general chat model.",
+    "publishedAt": "2026-11-04T03:00:00+05:30",
+    "rank": 10,
+    "sources": [
+      {
+        "name": "OpenAI Decisions guide",
+        "url": "https://developers.openai.com/api/docs/guides/decisions"
+      },
+      {
+        "name": "Cloudflare blog",
+        "url": "https://blog.cloudflare.com/clef-decision-models/"
+      },
+      {
+        "name": "Hamel Husain",
+        "url": "https://hamel.dev/blog/posts/decision-model-evals/"
+      }
+    ],
+    "specs": [
+      {
+        "label": "OpenAI",
+        "value": "Decisions API"
+      },
+      {
+        "label": "Cloudflare",
+        "value": "Clef, Clef Flash + RL tuning"
+      },
+      {
+        "label": "Example user",
+        "value": "Workday picks UI components at runtime"
+      }
+    ],
+    "summary": "OpenAI's Decisions API, Cloudflare's Clef and Opper's Jev return structured answers with a confidence for each option, at very low latency and cost.",
+    "id": "2026-11-04-decision-models"
+  },
+  {
+    "actions": [
+      "If you build security or devtools products, ask your Google contact about Fairwind access now.",
+      "Budget for the price step-up: the intro rate doubles after the launch period.",
+      "Track 'unsupported claims' and 'overreach' as eval metrics in your own product; vendors now report them."
+    ],
+    "category": "Models",
+    "details": [
+      "Announced 28 October, two weeks after Gemini 4 Argon. Google positions Carbon for long-horizon work: internal teams ran it for days on tasks like tracing and patching bugs across large codebases.",
+      "Security is the headline. Google reports 88.2% on SEC-bench Pro (finding vulnerabilities), 54.8% on ExploitGym and 71% on CWE-bench (patching), plus more than double Argon's success rate on secure code generation in internal tests.",
+      "Google also highlights behaviour changes: roughly half as many unsupported claims as Argon, 26% less overreach, 29% less under-delivery, and zero successful cheating on Terminal-Bench 4.0.",
+      "Access: a subset of cyber defenders first, then trusted partners through Google's Fairwind program. Developers, businesses and consumers are promised access later. Google did not state a context window."
+    ],
+    "edition": "2026-11-04",
+    "eventDate": "2026-10-28",
+    "headline": "Google's Gemini 4 Carbon tops the leaderboard, but ships to security teams first",
+    "impact": "high",
+    "pmTake": "Gated, staged releases for the most capable models are becoming normal. Plan roadmaps around the model you can actually get, not the one on the leaderboard.",
+    "publishedAt": "2026-11-04T03:00:00+05:30",
+    "rank": 1,
+    "sources": [
+      {
+        "name": "Google blog",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+      },
+      {
+        "name": "O'Reilly Radar, Nov 2026",
+        "url": "https://www.oreilly.com/radar/radar-trends-to-watch-november-2026/"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Intelligence Index",
+        "value": "59 (#1)"
+      },
+      {
+        "label": "Intro price",
+        "value": "$2 in / $10 out per 1M"
+      },
+      {
+        "label": "Later price",
+        "value": "$4 in / $20 out per 1M"
+      },
+      {
+        "label": "Cached input",
+        "value": "95% off"
+      },
+      {
+        "label": "SEC-bench Pro",
+        "value": "88.2%"
+      },
+      {
+        "label": "Prompt injection ASR",
+        "value": "0.0% (Argon 0.7%)"
+      }
+    ],
+    "summary": "Google calls Carbon its strongest model, built for multi-day agentic coding and cybersecurity. It ranks #1 on the Artificial Analysis Intelligence Index, yet general developer access is still pending.",
+    "id": "2026-11-04-gemini-4-carbon"
+  },
+  {
+    "actions": [
+      "Model your unit economics per active user, including heavy-user tails, before setting plan limits.",
+      "If you depend on a vendor's model, watch for silent redirects and retirements; pin versions and monitor output quality."
+    ],
+    "category": "Market",
+    "details": [
+      "Over the Halloween weekend some users lost much of their weekly allowance. Musk confirmed on X it was deliberate. Future limits have not been disclosed.",
+      "Separately, xAI doubled Grok 4.7 long-context pricing beyond 200K tokens, retired an image model with silent redirects to a lower-quality one, and retired two voice models.",
+      "Cursor, now owned by SpaceX, is sold as 'The X Subscription' with a weekly usage pool shared across Cursor and Grok; Claude and GPT in Cursor bill separately at API price from Premium up.",
+      "TechCrunch also reports signs of strain in AI spending more broadly, and OpenAI reportedly lowered its funding target."
+    ],
+    "edition": "2026-11-04",
+    "eventDate": "2026-11-02",
+    "headline": "xAI cuts Grok usage without warning, citing serving costs",
+    "impact": "medium",
+    "pmTake": "Inference cost is now a product constraint, not just an engineering one. Changing limits without notice burns trust; communicate quota changes in advance.",
+    "publishedAt": "2026-11-04T03:00:00+05:30",
+    "rank": 6,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/"
+      },
+      {
+        "name": "AI Tools Recap, 2 Nov",
+        "url": "https://aitoolsrecap.com/Blog/ai-news-november-02-2026"
+      },
+      {
+        "name": "TechCrunch: cracks in AI spending",
+        "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Reported jump",
+        "value": "Usage 50% → 100% overnight"
+      },
+      {
+        "label": "Grok 4.7 API",
+        "value": "Price doubles past 200K tokens"
+      },
+      {
+        "label": "Cursor",
+        "value": "Now 'X Subscription', shared pool with Grok"
+      }
+    ],
+    "summary": "Some Grok Bot subscribers found weekly limits maxed out overnight. Elon Musk said serving costs were unsustainably high relative to revenue. xAI also raised long-context pricing and retired several models.",
+    "id": "2026-11-04-grok-limits"
+  },
+  {
+    "actions": [
+      "Add K3.1 Pro to your next model bake-off for agentic or terminal-style tasks.",
+      "Check data-residency and vendor-risk policy before routing customer data to a China-based provider; US federal agencies have already banned DeepSeek."
+    ],
+    "category": "Models",
+    "details": [
+      "Released 23 October. Artificial Analysis places it behind Claude Opus 5.5 (58), Claude Sonnet 5.5 and Meta's Muse Wonder Full (56 each), and 11 points above Kimi K3.",
+      "Its agentic numbers are the story: 67% on Terminal-Bench 4.0, up from 13% for K3, and 73% on AutomationBench-AA.",
+      "Pricing is a third lower than K3 on every rate, though it uses about 14% more output tokens per task, so cost per task is roughly flat at about $1.98.",
+      "Hallucination rate fell from 53% to 44%. Weights are not yet published; Moonshot is expected to release them, which would make it the top open-weights model."
+    ],
+    "edition": "2026-11-04",
+    "eventDate": "2026-10-23",
+    "headline": "Moonshot's Kimi K3.1 Pro lands just behind the frontier at a fraction of the price",
+    "impact": "high",
+    "pmTake": "Near-frontier agentic performance at $2/$10 changes the build-vs-buy math for cost-sensitive features, especially if the weights become self-hostable.",
+    "publishedAt": "2026-11-04T03:00:00+05:30",
+    "rank": 4,
+    "sources": [
+      {
+        "name": "Artificial Analysis",
+        "url": "https://artificialanalysis.ai/articles/kimi-k3-1-pro-launch-benchmarks"
+      },
+      {
+        "name": "O'Reilly Radar",
+        "url": "https://www.oreilly.com/radar/radar-trends-to-watch-november-2026/"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Params",
+        "value": "2.8T total / 104B active"
+      },
+      {
+        "label": "Context",
+        "value": "1M tokens"
+      },
+      {
+        "label": "Price",
+        "value": "$2 in / $10 out / $0.20 cached"
+      },
+      {
+        "label": "Intelligence Index",
+        "value": "55 (#4)"
+      },
+      {
+        "label": "Terminal-Bench 4.0",
+        "value": "67% (highest listed)"
+      },
+      {
+        "label": "GDPval-AA",
+        "value": "1,846 Elo (#3)"
+      }
+    ],
+    "summary": "Kimi K3.1 Pro scores 55 on the Artificial Analysis Intelligence Index, fourth overall, and posts the highest Terminal-Bench 4.0 score of any model. Open weights are expected soon.",
+    "id": "2026-11-04-kimi-k3-1-pro"
+  },
+  {
+    "actions": [
+      "Treat it as a candidate for cheap long-context batch jobs once independent benchmarks appear.",
+      "Apply the same vendor-risk review as for other China-based providers."
+    ],
+    "category": "Models",
+    "details": [
+      "Released 2 November via Meituan's chat app and API. Prices are listed as a limited-time discount.",
+      "Because the API speaks both OpenAI and Anthropic formats, an existing setup may only need a base-URL change.",
+      "No benchmark scores were published at launch; weights are planned for GitHub and Hugging Face."
+    ],
+    "edition": "2026-11-04",
+    "eventDate": "2026-11-02",
+    "headline": "Meituan's LongCat-2.5: 1M context at $0.30 per million input tokens",
+    "impact": "watch",
+    "pmTake": "Drop-in API compatibility plus very low prices makes switching cheap. Expect price pressure on mid-tier models.",
+    "publishedAt": "2026-11-04T03:00:00+05:30",
+    "rank": 8,
+    "sources": [
+      {
+        "name": "TechNode",
+        "url": "https://technode.com/2026/11/02/meituan-launches-longcat-2-5-multimodal-ai-model-for-extended-coding-tasks/"
+      },
+      {
+        "name": "AI Tools Recap, 3 Nov",
+        "url": "https://aitoolsrecap.com/Blog/ai-news-november-03-2026"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Params",
+        "value": "~1.6T / ~48B active"
+      },
+      {
+        "label": "Context",
+        "value": "1M (128K max output)"
+      },
+      {
+        "label": "Price",
+        "value": "$0.30 in / $1.20 out per 1M"
+      },
+      {
+        "label": "Cached input",
+        "value": "$0.006 per 1M"
+      },
+      {
+        "label": "Weights",
+        "value": "Not yet open"
+      }
+    ],
+    "summary": "A 1.6T-parameter multimodal mixture-of-experts model aimed at long coding tasks, with an API that accepts both OpenAI and Anthropic request formats.",
+    "id": "2026-11-04-longcat-2-5"
+  },
+  {
+    "actions": [
+      "Map which of your users' recurring tasks an always-on agent could take over, and whether your product should expose them via plugins/MCP.",
+      "Borrow the pattern: tiered autonomy per action type plus mandatory hand-off for money and credentials."
+    ],
+    "category": "Agents & Dev",
+    "details": [
+      "Unveiled at DevDay on 29 September and still the main reference point for always-on consumer agents. Each Dot runs on its own cloud machine with a browser and can do proactive, read-only research in the background.",
+      "Controls: a separate auto-review step checks planned actions like sending email; custom rules set how freely the agent acts per action; password changes and money transfers always come back to the user; local computer access is off by default.",
+      "Limits: no phone calls or own email address, texting is a small US beta, and users can't inspect or edit a Dot's memories, only delete the whole Dot. OpenAI says prompt-injection risk is reduced, not removed.",
+      "Pricing for extra Dots isn't announced. Enterprise, Edu and Healthcare get an admin-enabled beta."
+    ],
+    "edition": "2026-11-04",
+    "eventDate": "2026-09-29",
+    "headline": "OpenAI Dots: always-on agents with their own cloud computer",
+    "impact": "high",
+    "pmTake": "This sets the consumer expectation for 'an assistant that works while you're away'. Its safety controls (action review, hand-off rules) are a good template for any agent you ship.",
+    "publishedAt": "2026-11-04T03:00:00+05:30",
+    "rank": 5,
+    "sources": [
+      {
+        "name": "SiliconANGLE",
+        "url": "https://siliconangle.com/2026/09/29/openai-launches-dots-always-on-ai-agents-in-chatgpt-with-their-own-cloud-computers/"
+      },
+      {
+        "name": "eesel explainer",
+        "url": "https://www.eesel.ai/blog/openai-dots"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Model",
+        "value": "GPT-6 Astra"
+      },
+      {
+        "label": "Integrations",
+        "value": "4,000+ apps"
+      },
+      {
+        "label": "Included in",
+        "value": "Pro ($100+/mo), Business Premium"
+      },
+      {
+        "label": "Not in",
+        "value": "Free, Go, Plus; Pro excl. EEA/UK/CH"
+      }
+    ],
+    "summary": "Dots are persistent ChatGPT agents that keep working between conversations, with a browser, plugins to thousands of apps and background research. The first one is included in Pro plans.",
+    "id": "2026-11-04-openai-dots"
+  }
+]
