@@ -168,11 +168,12 @@ with st.sidebar:
     st.markdown(
         "**How it works**\n\n"
         "1. Twice a week a GitHub Actions job pulls the latest posts from ~12 AI news feeds.\n"
-        "2. Claude ranks them for relevance to an AI product manager and groups duplicates.\n"
+        "2. An LLM (Google Gemini, free tier) ranks them for relevance to an AI product manager and groups duplicates.\n"
         "3. For each pick it reads the full articles and writes a structured brief: "
         "summary, PM takeaway, hard specs, details, actions.\n"
         "4. Links are restricted to the articles it actually read, so it can't cite sources it didn't use.\n"
-        "5. The job commits the new edition; Streamlit redeploys automatically."
+        "5. The job commits the new edition; Streamlit redeploys automatically.\n\n"
+        "The model provider is swappable (Gemini or Claude) with one setting, and the whole stack runs on free tiers."
     )
     if REPO_LINK:
         st.markdown(f"[Source code]({REPO_LINK})")
