@@ -2,12 +2,14 @@
 
 Steps:
   1. Collect recent posts from the RSS feeds in sources.py.
-  2. Ask Claude to pick the 8-12 most important items for an AI product manager
+  2. Ask the model to pick the 8-12 most important items for an AI product manager
      (grouping articles about the same event) and write the edition intro.
-  3. For each pick, fetch the full articles and ask Claude for a structured brief.
+  3. For each pick, fetch the full articles and ask the model for a structured brief.
   4. Append the new edition to data/stories.json and data/editions.json.
 
-Run:  python -m pipeline.run            (needs ANTHROPIC_API_KEY)
+The model provider is chosen in pipeline/llm.py (Gemini free tier by default).
+
+Run:  python -m pipeline.run            (needs GEMINI_API_KEY, or PROVIDER=anthropic + ANTHROPIC_API_KEY)
       python -m pipeline.run --dry-run  (fetch + select only, writes nothing)
 """
 
@@ -16,10 +18,8 @@ from __future__ import annotations
 import argparse
 import html
 import json
-import os
 import re
 import sys
-import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -27,6 +27,7 @@ import feedparser
 import requests
 import trafilatura
 
+from pipeline.llm import make_client
 from pipeline.sources import FEEDS
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -34,7 +35,6 @@ STORIES_PATH = ROOT / "data" / "stories.json"
 EDITIONS_PATH = ROOT / "data" / "editions.json"
 
 IST = timezone(timedelta(hours=5, minutes=30))
-MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-5-5")
 CATEGORIES = ["Models", "Products", "Agents & Dev", "Policy & Safety", "Market"]
 IMPACTS = ["high", "medium", "watch"]
 USER_AGENT = "AI-PM-Radar/1.0 (personal news digest)"
@@ -199,28 +199,9 @@ def fetch_article(url: str) -> str:
     return text[:MAX_ARTICLE_CHARS]
 
 
-# ---- Claude calls -----------------------------------------------------------
+# ---- model calls ----------------------------------------------------------
 def call_tool(client, tool: dict, prompt: str, max_tokens: int = 4000) -> dict:
-    for attempt in range(3):
-        try:
-            msg = client.messages.create(
-                model=MODEL,
-                max_tokens=max_tokens,
-                system=EDITOR_BRIEF,
-                tools=[tool],
-                tool_choice={"type": "tool", "name": tool["name"]},
-                messages=[{"role": "user", "content": prompt}],
-            )
-            for block in msg.content:
-                if getattr(block, "type", "") == "tool_use":
-                    return block.input
-            raise RuntimeError("model returned no tool call")
-        except Exception as exc:
-            if attempt == 2:
-                raise
-            print(f"  ! retrying after error: {exc}", file=sys.stderr)
-            time.sleep(5 * (attempt + 1))
-    raise RuntimeError("unreachable")
+    return client.call_tool(EDITOR_BRIEF, tool, prompt, max_tokens)
 
 
 def select(client, candidates: list[dict], recent_headlines: list[str]) -> dict:
@@ -306,9 +287,7 @@ def main(argv: list[str] | None = None, client=None) -> int:
         return 0
 
     if client is None:
-        import anthropic
-
-        client = anthropic.Anthropic()
+        client = make_client()
 
     selection = select(client, candidates, recent_headlines)
     picks = selection.get("picks", [])
