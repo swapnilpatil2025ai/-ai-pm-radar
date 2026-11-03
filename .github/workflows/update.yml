@@ -30,7 +30,8 @@ jobs:
 
       - name: Build new edition
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PROVIDER: gemini
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python -m pipeline.run
 
       - name: Commit if anything changed
